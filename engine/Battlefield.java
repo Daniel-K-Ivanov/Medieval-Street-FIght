@@ -57,6 +57,10 @@ public class Battlefield {
 				"\t\t\t\tEA:" + pc.getArchers().size());
 			writer.println("G: " + player.getGriffons().size() +
 				"\t\t\t\tEG:" + pc.getGriffons().size());
+			writer.println("\n\n Commands:");
+			writer.println("move (x0,y0) (x1,y1)");
+			writer.println("attack (x1,y1)");
+			writer.println("end\tEnds player turn");
 			writer.close();
 			Desktop desktop = Desktop.getDesktop();
 	        if(file.exists()) desktop.open(file);
