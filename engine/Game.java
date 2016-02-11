@@ -169,6 +169,7 @@ public class Game {
 		
 		while (playerHasArmy && enemyHasArmy) {
 			if (player.isOnTurn()) {
+				field.printField(player, enemy, field);
 				readGameCommands(field);
 			} 
 			else {
